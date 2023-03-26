@@ -1,11 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+:root{
+    --first-color: #FEA646;
+    --second-color: #8F3A45;
+    --border-color: #7FA2B4;
+    --phrase-background:rgba(255, 255, 255, 0.788);
+    --phrase-text:rgb(122, 121, 121);
+    --font-general: 'Sen', sans-serif;
+}
+
+
 *{
     box-sizing: border-box;
+    
 }
 
 body{
     margin: 0;
+
 }
 
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    -webkit-text-stroke: 3px var(--first-color);
+    color: white;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -1rem;
+    letter-spacing: -1px;
+
+}
+
+
 button{
-    border: none;
+    border: 3px solid var(--second-color);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 1.8rem;
+    background-color: var(--first-color);
+    font-family: var(--font-general);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: var(--second-color);
+}
+
+button:hover{
+    background-color: var(--second-color);
+    color: var(--first-color);
+    border: 3px solid var(--first-color);
+    transition: 0.5s;
+}
+
+.phrases__box{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 3px solid var(--border-color);
+    background-color: var(--phrase-background);
+    color: var(--phrase-text);
+    font-family: var(--font-general);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height: 135px;
+    min-width: 400px;
+    min-height: 135px;
+
+}
+
+/* Media Query*/
+
+@media (min-width: 700px) {
+
+    h1{
+        max-width: 400px;
+        font-size: 55px;
+        
+    }
+    
+    .phrases__box{
+        margin-top: 1rem;
+        padding: 1rem;
+        min-width: 450px;
+
+    }
+
+
 }
