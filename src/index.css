@@ -11,6 +11,10 @@
     --font-general: 'Sen', sans-serif;
 }
 
+img{
+    width:100%;
+    heigth:100%;
+}
 
 *{
     box-sizing: border-box;
